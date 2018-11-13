@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Datos Personales</string>
+    <string name="quest_nombre">Introduce tu nombre</string>
+    <string name="quest_apellidos">Introduce tus apellidos</string>
+    <string name="edad">Edad:</string>
+    <string name="genero">Género:</string>
+    <string name="masculino">Hombre</string>
+    <string name="femenino">Mujer</string>
+    <string name="estadoCivil">Estado Civil</string>
+    <string name="hijos">¿Tiene hijos?</string>
+    <string name="guardar">Guardar</string>
+    <string name="reset">Reset</string>
+    <string name="casado">Casado</string>
+    <string name="separado">Separado</string>
+    <string name="viudo">Viudo</string>
+    <string name="otro">Otro</string>
+    <string name="mayorEdad">Es mayor de edad</string>
+    <string name="menorEdad">Es menor de edad</string>
+    <string name="conHijos">Con hijos</string>
+    <string name="sinHijos">Sin hijos</string>
+    <string name="errorNombre">No ha introducido el nombre</string>
+    <string name="errorApellidos">No ha introducido los apellidos</string>
+    <string name="errorEdad">No ha introducido la edad</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Personal Information</string>
+    <string name="quest_nombre">Insert to name</string>
+    <string name="quest_apellidos">Insert to surnames</string>
+    <string name="edad">Age:</string>
+    <string name="genero">Gender:</string>
+    <string name="masculino">Male</string>
+    <string name="femenino">Female</string>
+    <string name="estadoCivil">Civil status:</string>
+    <string name="hijos">Do you have kids?</string>
+    <string name="guardar">Save</string>
+    <string name="reset">Reset</string>
+    <string name="casado">Married</string>
+    <string name="separado">Separated</string>
+    <string name="viudo">Widower</string>
+    <string name="otro">Other</string>
+    <string name="mayorEdad">He is of age</string>
+    <string name="menorEdad">Is a minor</string>
+    <string name="conHijos">With children</string>
+    <string name="sinHijos">Childless</string>
+    <string name="errorNombre">You have not entered the name</string>
+    <string name="errorApellidos">You have not entered the surnames</string>
+    <string name="errorEdad">You have not entered the age</string>
+</resources>
