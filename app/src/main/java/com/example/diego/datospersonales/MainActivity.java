@@ -1,5 +1,7 @@
 package com.example.diego.datospersonales;
 
+import android.content.Context;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +13,10 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
+
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()//Llamamos a la libreria
+                .setDefaultFontPath("font/clarendom.ttf") //Fuente agregada en los assets dentro de la carpeta fonts
+                .setFontAttrId(R.attr.fontPath)
+                .build());
+
+
+
 
         //Creamos todos los editText para recoger su información
         final EditText dameNombre = (EditText) findViewById(R.id.etNombre);
@@ -57,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Creamos el elemento boton y le creamos el listener
         Button botonGuardar = (Button)findViewById(R.id.buttonGuardar);
+
         botonGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -163,6 +178,11 @@ public class MainActivity extends AppCompatActivity {
         dameResultado.setTextColor(dameResultado.getContext().getResources().getColor(R.color.error));
 
 
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));//Aplicamos la fuente en un activity
     }
 
 

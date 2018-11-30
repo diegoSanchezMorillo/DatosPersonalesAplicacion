@@ -8,4 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="DatosPersonales" parent="Theme.AppCompat.DayNight">
+
+        <item name="colorPrimary">@color/principal</item>
+        <item name="colorPrimaryDark">@color/secundario</item>
+        <item name="colorButtonNormal">@color/principal</item>//Color para los botones
+        <item name="colorControlActivated">@color/principal</item>//Color para los checkbox
+        <item name="android:textColor">@color/secundario</item>//Color para el texto
+        <item name="android:textStyle"></item>
+    </style>
+
+    <style name="DatosPersonalesRojo">
+        <item name="colorButtonNormal">@color/error</item>//Color para los botones
+    </style>
+
+
+
 </resources>
